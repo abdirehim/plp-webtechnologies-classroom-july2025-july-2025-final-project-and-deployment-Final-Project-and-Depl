@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | EventHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <span class="logo-icon">🎉</span>
+            <span class="logo-text">EventHub</span>
+          </div>
+          <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="submit-event.html" class="nav-link">Submit Event</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="page-header">
+          <h1 class="page-title">Get in Touch</h1>
+          <p class="page-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </section>
+
+        <section class="contact-content">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h2>Contact Information</h2>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="contact-icon">📧</div>
+                  <div class="contact-details">
+                    <h4>Email Us</h4>
+                    <p><a href="mailto:hello@eventhub.com">hello@eventhub.com</a></p>
+                    <small>We typically respond within 24 hours</small>
+                  </div>
+                </div>
+                
+                <div class="contact-method">
+                  <div class="contact-icon">💬</div>
+                  <div class="contact-details">
+                    <h4>Live Chat</h4>
+                    <p>Available Monday - Friday</p>
+                    <small>9:00 AM - 6:00 PM EST</small>
+                  </div>
+                </div>
+                
+                <div class="contact-method">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-details">
+                    <h4>Office</h4>
+                    <p>123 Community Street<br>Downtown District<br>City, State 12345</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-section">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                  <h4>How do I submit an event?</h4>
+                  <p>Visit our <a href="submit-event.html">Submit Event</a> page and fill out the simple form. Events are reviewed within 24 hours.</p>
+                </div>
+                <div class="faq-item">
+                  <h4>Is EventHub free to use?</h4>
+                  <p>Yes! EventHub is completely free for both event organizers and attendees.</p>
+                </div>
+                <div class="faq-item">
+                  <h4>Can I edit my event after submission?</h4>
+                  <p>Yes, contact us with your event details and we'll help you make any necessary changes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-section">
+              <form class="contact-form">
+                <h2>Send us a Message</h2>
+                
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a topic</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="event">Event Submission Help</option>
+                    <option value="technical">Technical Support</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter">
+                    <span class="checkmark"></span>
+                    Subscribe to our newsletter for event updates
+                  </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="support-section">
+          <div class="support-content">
+            <h2>Need Immediate Help?</h2>
+            <p>Check out our help resources or connect with our community</p>
+            <div class="support-actions">
+              <a href="#" class="btn btn-secondary">Help Center</a>
+              <a href="#" class="btn btn-secondary">Community Forum</a>
+              <a href="#" class="btn btn-secondary">Video Tutorials</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon">🎉</span>
+              <span class="logo-text">EventHub</span>
+            </div>
+            <p class="footer-tagline">Connecting communities through amazing events</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4 class="footer-title">Platform</h4>
+              <a href="events.html" class="footer-link">Browse Events</a>
+              <a href="submit-event.html" class="footer-link">Create Event</a>
+              <a href="about.html" class="footer-link">About Us</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Support</h4>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="#" class="footer-link">Help Center</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Connect</h4>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EventHub. All rights reserved.</p>
+          <p>Made with ❤️ for the community</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

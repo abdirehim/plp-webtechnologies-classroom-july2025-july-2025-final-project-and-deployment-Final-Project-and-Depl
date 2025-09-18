@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Event | EventHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <span class="logo-icon">🎉</span>
+            <span class="logo-text">EventHub</span>
+          </div>
+          <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="events.html" class="nav-link">Events</a>
+            <a href="submit-event.html" class="nav-link active" aria-current="page">Submit Event</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="page-header">
+          <h1 class="page-title">Submit Your Event</h1>
+          <p class="page-subtitle">Share your amazing event with the community and help others discover great experiences</p>
+        </section>
+
+        <section class="submit-content">
+          <div class="submit-grid">
+            <div class="submit-info">
+              <h2>Event Submission Guidelines</h2>
+              <div class="guidelines">
+                <div class="guideline-item">
+                  <div class="guideline-icon">✅</div>
+                  <div class="guideline-text">
+                    <h4>Community Focused</h4>
+                    <p>Events should benefit or engage the local community</p>
+                  </div>
+                </div>
+                
+                <div class="guideline-item">
+                  <div class="guideline-icon">📅</div>
+                  <div class="guideline-text">
+                    <h4>Future Events Only</h4>
+                    <p>Submit events at least 3 days in advance</p>
+                  </div>
+                </div>
+                
+                <div class="guideline-item">
+                  <div class="guideline-icon">📝</div>
+                  <div class="guideline-text">
+                    <h4>Complete Information</h4>
+                    <p>Provide clear, accurate details about your event</p>
+                  </div>
+                </div>
+                
+                <div class="guideline-item">
+                  <div class="guideline-icon">🎯</div>
+                  <div class="guideline-text">
+                    <h4>Appropriate Content</h4>
+                    <p>Family-friendly and respectful content only</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="submission-process">
+                <h3>What Happens Next?</h3>
+                <div class="process-steps">
+                  <div class="process-step">
+                    <span class="step-number">1</span>
+                    <p>Submit your event using the form</p>
+                  </div>
+                  <div class="process-step">
+                    <span class="step-number">2</span>
+                    <p>Our team reviews within 24 hours</p>
+                  </div>
+                  <div class="process-step">
+                    <span class="step-number">3</span>
+                    <p>Approved events go live immediately</p>
+                  </div>
+                  <div class="process-step">
+                    <span class="step-number">4</span>
+                    <p>Share your event link with others</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-form-section">
+              <form class="submit-form">
+                <h2>Event Details</h2>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="event-name">Event Name *</label>
+                    <input type="text" id="event-name" name="event-name" placeholder="Enter your event name" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="event-category">Category *</label>
+                    <select id="event-category" name="event-category" required>
+                      <option value="">Select a category</option>
+                      <option value="arts">Arts & Culture</option>
+                      <option value="tech">Technology</option>
+                      <option value="food">Food & Community</option>
+                      <option value="volunteer">Volunteering</option>
+                      <option value="sports">Sports & Fitness</option>
+                      <option value="education">Education</option>
+                      <option value="business">Business & Networking</option>
+                      <option value="family">Family & Kids</option>
+                    </select>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="event-type">Event Type *</label>
+                    <select id="event-type" name="event-type" required>
+                      <option value="">Select event type</option>
+                      <option value="free">Free Event</option>
+                      <option value="paid">Paid Event</option>
+                      <option value="donation">Donation Based</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="event-date">Event Date *</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="event-time">Start Time *</label>
+                    <input type="time" id="event-time" name="event-time" required>
+                  </div>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="event-location">Location *</label>
+                    <input type="text" id="event-location" name="event-location" placeholder="Event venue or address" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="event-price">Price</label>
+                    <input type="text" id="event-price" name="event-price" placeholder="Free, $10, $5-15, etc.">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="event-description">Event Description *</label>
+                  <textarea id="event-description" name="event-description" rows="5" placeholder="Describe your event, what attendees can expect, and any important details..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label for="event-website">Event Website/Link</label>
+                  <input type="url" id="event-website" name="event-website" placeholder="https://your-event-website.com">
+                </div>
+                
+                <div class="form-group">
+                  <label for="organizer-name">Organizer Name *</label>
+                  <input type="text" id="organizer-name" name="organizer-name" placeholder="Your name or organization" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="organizer-email">Contact Email *</label>
+                  <input type="email" id="organizer-email" name="organizer-email" placeholder="your@email.com" required>
+                  <small>This email won't be displayed publicly but used for event management</small>
+                </div>
+                
+                <div class="form-group">
+                  <label for="organizer-phone">Contact Phone</label>
+                  <input type="tel" id="organizer-phone" name="organizer-phone" placeholder="(555) 123-4567">
+                </div>
+                
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="terms" required>
+                    <span class="checkmark"></span>
+                    I agree to the <a href="#" target="_blank">Terms of Service</a> and confirm that this event information is accurate
+                  </label>
+                </div>
+                
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="updates">
+                    <span class="checkmark"></span>
+                    Send me updates about my event and EventHub news
+                  </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Event for Review</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="help-section">
+          <div class="help-content">
+            <h2>Need Help?</h2>
+            <p>If you have questions about submitting your event, we're here to help!</p>
+            <div class="help-actions">
+              <a href="contact.html" class="btn btn-secondary">Contact Support</a>
+              <a href="#" class="btn btn-secondary">View Examples</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon">🎉</span>
+              <span class="logo-text">EventHub</span>
+            </div>
+            <p class="footer-tagline">Connecting communities through amazing events</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4 class="footer-title">Platform</h4>
+              <a href="events.html" class="footer-link">Browse Events</a>
+              <a href="submit-event.html" class="footer-link">Create Event</a>
+              <a href="about.html" class="footer-link">About Us</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Support</h4>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="#" class="footer-link">Help Center</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Connect</h4>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EventHub. All rights reserved.</p>
+          <p>Made with ❤️ for the community</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

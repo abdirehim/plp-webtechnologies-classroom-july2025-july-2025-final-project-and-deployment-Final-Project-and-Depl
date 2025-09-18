@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | EventHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <span class="logo-icon">🎉</span>
+            <span class="logo-text">EventHub</span>
+          </div>
+          <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="events.html" class="nav-link active" aria-current="page">Events</a>
+            <a href="submit-event.html" class="nav-link">Submit Event</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="page-header">
+          <h1 class="page-title">Upcoming Events</h1>
+          <p class="page-subtitle">Discover amazing events happening in your community</p>
+        </section>
+
+        <section class="filters">
+          <form class="filter-form">
+            <div class="filter-group">
+              <input type="text" class="filter-input" placeholder="Search events..." aria-label="Search events">
+            </div>
+            <div class="filter-group">
+              <select class="filter-select" aria-label="Filter by category">
+                <option value="">All Categories</option>
+                <option value="arts">Arts & Culture</option>
+                <option value="tech">Technology</option>
+                <option value="food">Food & Community</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="sports">Sports & Fitness</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <input type="date" class="filter-input" aria-label="Filter by date">
+            </div>
+            <button type="submit" class="btn btn-primary">Filter</button>
+          </form>
+        </section>
+
+        <section class="events-listing">
+          <div class="events-grid">
+            <article class="event-card">
+              <div class="event-image">
+                <img src="images/download (4).jpg" alt="Art in the Park" loading="lazy">
+                <div class="event-category">Arts & Culture</div>
+              </div>
+              <div class="event-content">
+                <h3 class="event-title">Art in the Park</h3>
+                <div class="event-meta">
+                  <span class="event-date">📅 Oct 5, 2025</span>
+                  <span class="event-location">📍 Central Park</span>
+                </div>
+                <p class="event-description">Enjoy local artists, live music, and food trucks in a family-friendly outdoor setting.</p>
+                <div class="event-actions">
+                  <a href="#" class="event-link">Learn More →</a>
+                  <span class="event-price">Free</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-image">
+                <img src="images/download.jpg" alt="Tech Meetup" loading="lazy">
+                <div class="event-category">Technology</div>
+              </div>
+              <div class="event-content">
+                <h3 class="event-title">Tech Innovators Meetup</h3>
+                <div class="event-meta">
+                  <span class="event-date">📅 Oct 12, 2025</span>
+                  <span class="event-location">📍 Tech Hub</span>
+                </div>
+                <p class="event-description">Network with tech enthusiasts and hear from industry leaders. All skill levels welcome.</p>
+                <div class="event-actions">
+                  <a href="#" class="event-link">Learn More →</a>
+                  <span class="event-price">$15</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-image">
+                <img src="images/download (3).jpg" alt="Community Clean-Up" loading="lazy">
+                <div class="event-category">Volunteering</div>
+              </div>
+              <div class="event-content">
+                <h3 class="event-title">Community Clean-Up Day</h3>
+                <div class="event-meta">
+                  <span class="event-date">📅 Sep 28, 2025</span>
+                  <span class="event-location">📍 Various Parks</span>
+                </div>
+                <p class="event-description">Join neighbors for a day of giving back! Help clean up local parks and public spaces.</p>
+                <div class="event-actions">
+                  <a href="#" class="event-link">Learn More →</a>
+                  <span class="event-price">Free</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-image">
+                <img src="images/download (2).jpg" alt="Farmers Market" loading="lazy">
+                <div class="event-category">Food & Community</div>
+              </div>
+              <div class="event-content">
+                <h3 class="event-title">Weekly Farmers Market</h3>
+                <div class="event-meta">
+                  <span class="event-date">📅 Every Saturday</span>
+                  <span class="event-location">📍 Main Square</span>
+                </div>
+                <p class="event-description">Fresh produce and handmade goods from local vendors. Support your community!</p>
+                <div class="event-actions">
+                  <a href="#" class="event-link">Learn More →</a>
+                  <span class="event-price">Free Entry</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-image">
+                <img src="images/download (1).jpg" alt="Yoga in the Park" loading="lazy">
+                <div class="event-category">Sports & Fitness</div>
+              </div>
+              <div class="event-content">
+                <h3 class="event-title">Morning Yoga Session</h3>
+                <div class="event-meta">
+                  <span class="event-date">📅 Oct 15, 2025</span>
+                  <span class="event-location">📍 Riverside Park</span>
+                </div>
+                <p class="event-description">Start your day with mindful movement in nature. All levels welcome, mats provided.</p>
+                <div class="event-actions">
+                  <a href="#" class="event-link">Learn More →</a>
+                  <span class="event-price">$10</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="event-card">
+              <div class="event-image">
+                <img src="images/download.jpg" alt="Book Club" loading="lazy">
+                <div class="event-category">Arts & Culture</div>
+              </div>
+              <div class="event-content">
+                <h3 class="event-title">Monthly Book Club</h3>
+                <div class="event-meta">
+                  <span class="event-date">📅 Oct 20, 2025</span>
+                  <span class="event-location">📍 City Library</span>
+                </div>
+                <p class="event-description">Join fellow book lovers for engaging discussions and literary discoveries.</p>
+                <div class="event-actions">
+                  <a href="#" class="event-link">Learn More →</a>
+                  <span class="event-price">Free</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="load-more">
+          <button class="btn btn-secondary">Load More Events</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-icon">🎉</span>
+              <span class="logo-text">EventHub</span>
+            </div>
+            <p class="footer-tagline">Connecting communities through amazing events</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4 class="footer-title">Platform</h4>
+              <a href="events.html" class="footer-link">Browse Events</a>
+              <a href="submit-event.html" class="footer-link">Create Event</a>
+              <a href="about.html" class="footer-link">About Us</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Support</h4>
+              <a href="contact.html" class="footer-link">Contact</a>
+              <a href="#" class="footer-link">Help Center</a>
+              <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-title">Connect</h4>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                <a href="#" class="social-link" aria-label="Instagram">📷</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 EventHub. All rights reserved.</p>
+          <p>Made with ❤️ for the community</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
