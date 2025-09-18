@@ -4,7 +4,7 @@ A modern, responsive web application that connects communities through local eve
 
 ## 🌟 Live Demo
 
-**[View Live Site](#)** *(Deploy link will be added here)*
+**[View Live Site](#)** *[(Deploy link will be added here)](https://plp-webtechnologies-classroom-july2-puce.vercel.app/)*
 
 ## 📋 Project Overview
 
@@ -80,8 +80,8 @@ EventHub/
 
 1. **Clone the repository**
    ```bash
-   git clone [repository-url]
-   cd eventhub
+   git clone https://github.com/abdirehim/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl
+  
    ```
 
 2. **Open in browser**
